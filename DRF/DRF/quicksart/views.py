@@ -1,7 +1,7 @@
-from django.contrib.auth.models import User, Group
-from rest_framework import viewsets
-from rest_framework import permissions
-from DRF.quicksart.serializers import UserSerializer, GroupSerializer
+from django.contrib.auth.models import Group, User
+from rest_framework import permissions, viewsets
+
+from DRF.quicksart.serializers import GroupSerializer, UserSerializer
 
 
 class UserViewSet(viewsets.ModelViewSet):
